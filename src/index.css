@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Hush Brand Colors */
+    --brand-dark: 201 9% 10%; /* #19191B */
+    --brand-yellow: 54 97% 62%; /* #FBE23E */
+    --brand-blue: 207 36% 55%; /* #5E90BA */
+    --brand-gray: 0 0% 44%; /* #707070 */
+    --brand-cream: 33 71% 96%; /* #FDF3E8 */
+    
+    /* Design System Colors */
+    --background: 33 71% 96%; /* cream background */
+    --foreground: 201 9% 10%; /* dark text */
+
+    --card: 0 0% 100%; /* white cards */
+    --card-foreground: 201 9% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 201 9% 10%;
+
+    --primary: 54 97% 62%; /* brand yellow */
+    --primary-foreground: 201 9% 10%; /* dark text on yellow */
+
+    --secondary: 207 36% 55%; /* brand blue */
+    --secondary-foreground: 0 0% 100%; /* white text on blue */
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 44%; /* brand gray */
+
+    --accent: 54 97% 62%; /* brand yellow */
+    --accent-foreground: 201 9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 100%;
+    --ring: 54 97% 62%; /* yellow ring */
+
+    --radius: 1rem; /* more rounded like the app */
+    
+    /* Custom gradients and effects */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-yellow)), hsl(var(--brand-blue)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--brand-yellow) / 0.1), hsl(var(--brand-blue) / 0.05));
+    --gradient-mesh: radial-gradient(circle at 20% 50%, hsl(var(--primary) / 0.12) 0%, transparent 50%), 
+                     radial-gradient(circle at 80% 20%, hsl(var(--secondary) / 0.12) 0%, transparent 50%), 
+                     radial-gradient(circle at 40% 80%, hsl(var(--primary) / 0.08) 0%, transparent 50%);
+    --shadow-card: 0 10px 30px -10px hsl(var(--brand-dark) / 0.1);
+    --shadow-button: 0 4px 20px hsl(var(--brand-yellow) / 0.3);
+    --shadow-glow: 0 0 60px hsl(var(--primary) / 0.3);
+    --shadow-inner: inset 0 2px 4px 0 hsl(var(--brand-dark) / 0.06);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
