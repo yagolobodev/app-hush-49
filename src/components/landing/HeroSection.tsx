@@ -17,9 +17,9 @@ export function HeroSection() {
           {/* Left Content */}
           <div className="text-center lg:text-left space-y-8 animate-fade-up">
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-brand-dark leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-brand-dark leading-[1.1] pb-2">
                 Contrate os
-                <span className="block text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+                <span className="block text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text pt-1">
                   melhores profissionais de Sinop e região
                 </span>
               </h1>

@@ -1,22 +1,28 @@
-# Welcome to your Lovable project
+# Hush - Plataforma de Serviços
 
-## Project info
+## Sobre o Projeto
 
-**URL**: https://lovable.dev/projects/4f897643-880e-4917-8aa5-4dfa7e92a27b
+Hush é uma plataforma moderna para gerenciamento de serviços, construída com React, TypeScript e Vite.
 
-## How can I edit this code?
+## Como executar localmente
 
-There are several ways of editing your application.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/yagolobodev/app-hush-49.git
+   cd app-hush-49
+   ```
 
-**Use Lovable**
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4f897643-880e-4917-8aa5-4dfa7e92a27b) and start prompting.
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+4. Abra [http://localhost:8080](http://localhost:8080) no seu navegador.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -49,6 +55,44 @@ npm run dev
 - Select the "Codespaces" tab.
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## Como fazer deploy
+
+### Produção
+
+Para criar uma versão otimizada para produção:
+
+```bash
+npm run build
+```
+
+Isso criará uma pasta `dist` com os arquivos prontos para produção.
+
+### GitHub Pages
+
+Para publicar no GitHub Pages:
+
+1. Certifique-se de que todas as alterações foram commitadas
+2. Execute:
+   ```bash
+   npm run deploy
+   ```
+
+O site estará disponível em: https://yagolobodev.github.io/app-hush-49
+
+## Tecnologias Utilizadas
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Radix UI
+
+## Estrutura do Projeto
+
+- `/src` - Código-fonte do projeto
+- `/public` - Arquivos estáticos
+- `/dist` - Build de produção (gerado automaticamente)
 
 ## What technologies are used for this project?
 
